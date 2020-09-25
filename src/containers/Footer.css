@@ -1,0 +1,32 @@
+.footer {
+    background-color: #34668D;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer .copyright {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 15px ;
+}
+
+.footer .social__media__icons svg {
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+.separator {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #FFFFFF;
+    margin-bottom: 50px;
+}
