@@ -1,36 +1,33 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './Loginpage.css'
 //icons
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-export default class Loginpage extends Component {
-	constructor(props) {
-		super(props)
+const  Loginpage = () => {
 	
-		this.state = {
-			 active : ''
-		}
-	}
+	const [active, setActive] = useState('')	
 	
-	handleActive = () =>{
-		this.setState({ active : 'right-panel-active' })
-		console.log(this.state.active)
+	//swict sing in sing up
+	const handleActive = () =>{
+		setActive('right-panel-active')
 	}
 
-	handleClose = () => {
-		this.setState({ active : ''})
-		console.log(this.state.active)
+	const handleClose = () => {
+		setActive('')
+		
 	}
 
-    render() {
-        return (
+	const handleSubmit = e => {
+		e.preventDefault()
+	}
+    return (
             <div className="login__page">
-    <div className={`login__form__container ${this.state.active}`} id="login__form__container">
+    <div className={`login__form__container ${active}`} id="login__form__container">
 		
 	<div className="form-container sign-up-container">
-		<form >
+		<form onSubmit={handleSubmit}>
 			<h1>Creer un compte</h1>
 			<div className="social-container">
 				<a href="/" className="social"><FacebookIcon fontSize="large"/></a>
@@ -41,12 +38,12 @@ export default class Loginpage extends Component {
 			<input type="text" placeholder="prenom" required/>
 			<input type="email" placeholder="Email" required/>
 			<input type="password" placeholder="Mot de passe" required/>
-			<button type="submit">Se connecter</button>
+			<button type="submit">S'inscrire</button>
 		</form>
 	</div>
 
 	<div className="form-container sign-in-container">
-		<form>
+		<form onSubmit={handleSubmit}>
 			<h1>Connection</h1>
 			<div className="social-container">
 				<a href="/" className="social"><FacebookIcon fontSize="large"/></a>
@@ -65,12 +62,12 @@ export default class Loginpage extends Component {
 			<div className="overlay-panel overlay-left">
 				<h1>De retour ?</h1>
 				<p>Connectes toi vite afin de voir ce qu'il y a de nouveau</p>
-				<button className="ghost" id="signIn" onClick={this.handleClose}>Connection</button>
+				<button className="ghost" id="signIn" onClick={handleClose}>Connection</button>
 			</div>
 			<div className="overlay-panel overlay-right">
 				<h1>Hey mon ami!</h1>
 				<p>Entres tes identifiants et passes ta journée avec nous</p>
-				<button className="ghost" id="signUp" onClick={this.handleActive}>Creer un compte</button>
+				<button className="ghost" id="signUp" onClick={handleActive}>Creer un compte</button>
 			</div>
 		</div>
 	</div>
@@ -78,4 +75,6 @@ export default class Loginpage extends Component {
             </div>
         )
     }
-}
+
+
+export default Loginpage

@@ -1,26 +1,11 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Navbar.css'
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export default class Navbar extends Component {
-  constructor(props) {
-      super(props)
-  
-      this.state = {
-           goToLogin : false
-      }
-  }
-  goToLogin = () => {
-      this.setState({goToLogin : true})
-  }
+const Navbar= () => {      
     
-    render() {
-        if(this.state.goToLogin){
-          return <Redirect push to="/login" />
-        }
-
         return (
             <div className="container-fluid">  
                 <nav className="navbar navbar-expand-lg row">
@@ -39,11 +24,14 @@ export default class Navbar extends Component {
                 <div className="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <button className="nav-link btn__login btns" onClick={this.goToLogin}>Se connecter</button>
+                            <Link to="/login"> 
+                                <button className="nav-link btn__login btns">Se connecter</button>
+                            </Link>
+                           
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <button className="nav-link btn__subscribe btns">S'inscrire</button>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 </nav>
@@ -51,4 +39,4 @@ export default class Navbar extends Component {
 
         )
     }
-}
+export default Navbar

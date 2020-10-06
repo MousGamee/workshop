@@ -3,7 +3,9 @@
 }
 
 .new__class__item img{
-    height:100%;
+    object-fit: fill;
+    min-width: 300px;
+    min-height: 200px;
     width: 100%;
     transition: .3s ease all; 
     transform: scale(.97);
@@ -12,3 +14,23 @@
 .new__class__item img:hover{
     transform: scale(1);
 }
+
+.card__info {
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+  }
+
+  .card__info > h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .card__info > h4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }

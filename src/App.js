@@ -1,26 +1,22 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import base from './base'
-import classes from './'
 import './App.css'
 import Header from './containers/Header'
 import Footer from './containers/Footer'
 import NewClass from './containers/Newclass'
+import Recommendations from './containers/Recommendations'
 
-export default class App extends Component {
-  state = {
-    classes : {}
-  }
- 
-  render() {
+const App = () => {
+  
     return (
       <div className="App">
-        
           <Header />
           <NewClass/>
+          <Recommendations />
           <Footer /> 
-       
-           
       </div>
     )
-  }
+  
 }
+
+export default App
