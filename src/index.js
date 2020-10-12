@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Loginpage from './containers/Loginpage'
+import Login from './containers/Login'
 import Page404 from './containers/Page404'
 import SearchResult from './containers/SearchResult'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import SignIn from './containers/SignIn';
 
 const Root = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route  path="/login" component={Loginpage} />
+      <Route  path="/login" component={Login} />
+      <Route  path="/signIn" component={SignIn} />
       <Route  path="/searchResult" component={SearchResult} />
       <Route  component={Page404} />
     </Switch>
