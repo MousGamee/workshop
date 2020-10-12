@@ -10,7 +10,7 @@ const classItems = {
   
     classItem2: {
       title: 'Amour de Saumon',
-      teacher : 'Boun',
+      teacher : 'Steeve',
       img: 'image2.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
       price: '15€'
@@ -18,7 +18,7 @@ const classItems = {
   
     classItem3: {
       title: 'Hamburger Maison',
-      teacher : 'Boun',
+      teacher : 'Marie et Joao',
       img: 'image3.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
       price :'20€'  
@@ -26,7 +26,7 @@ const classItems = {
   
     classItem4: {
       title: 'Tartines à l\'Italienne',
-      teacher : 'Boun',
+      teacher : 'Tic et Toc',
       img: 'image4.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
       price : '5€'
@@ -34,7 +34,7 @@ const classItems = {
     
     classItem5: {
       title: 'Pizza au Chorizo',
-      teacher : 'Boun',
+      teacher : 'MZ crew',
       img: 'image5.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
       price : '14€'
@@ -42,7 +42,7 @@ const classItems = {
   
     classItem6: {
       title: 'Moelleux au Chocolat',
-      teacher : 'Boun',
+      teacher : 'Mojo',
       img: 'image6.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
       price : '14€'

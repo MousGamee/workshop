@@ -5,10 +5,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const  Loginpage = () => {
+const  Loginpage = props => {
 	
 	const [active, setActive] = useState('')	
-	
+	console.log(props)
 	//swict sing in sing up
 	const handleActive = () =>{
 		setActive('right-panel-active')

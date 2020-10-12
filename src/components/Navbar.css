@@ -13,13 +13,14 @@
     align-items: center;
 }
 .form-inline > input {
-    width: 536px;
+    width: max-content;
+    max-width: 536px;
     height: 60px;
     position: relative;
     padding-left: 90px;
     padding-right: 30px;
     border-radius: 30px;
-    border: none;
+    border: solid 1px lightgray;
     background-color: #fff;
 }
 
@@ -52,13 +53,14 @@
 
 .btn__login{
     background-color: #1D90E8;
-    color : #FFF;
+    color : #FFF !important;
     border: 1px solid #1D90E8;;
 }
 
 .btn__login:hover{
     background-color: #FFF;
-    color : #1D90E8;
+    color : #1D90E8 !important;
+    text-decoration: none !important;
     border: solid 1px #1D90E8;;
 }
 

@@ -2,19 +2,9 @@
     padding: 0 !important;
 }
 
-.new__class__item img{
-    object-fit: fill;
-    min-width: 300px;
-    min-height: 200px;
-    width: 100%;
-    transition: .3s ease all; 
-    transform: scale(.97);
-}
-
 .new__class__item img:hover{
     transform: scale(1);
 }
-
 .card__info {
     margin-top: -9px;
     border-radius: 10px;

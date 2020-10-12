@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from'../components/Navbar'
 // css
 import './Header.css'
 
 const Header = () => {
+    
     return (
         <header className="header">
-            <Navbar />
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4 col-md-6 header__presentation">

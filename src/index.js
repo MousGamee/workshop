@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import Loginpage from './containers/Loginpage'
 import Page404 from './containers/Page404'
+import SearchResult from './containers/SearchResult'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
@@ -13,7 +13,8 @@ const Root = () => (
     <Switch>
       <Route exact path="/" component={App} />
       <Route  path="/login" component={Loginpage} />
-      <Route   component={Page404} />
+      <Route  path="/searchResult" component={SearchResult} />
+      <Route  component={Page404} />
     </Switch>
   </Router>
 )
