@@ -6,11 +6,11 @@ const Newclass = () => {
     
      const [classItem, setClassItem] = useState(classItems)
     
-     
         const newClasses = Object
         .keys(classItem)
             .map(key => (
                 <Newclassitem 
+                id={key}
                 img={classItem[key].img}
                 teacher={classItem[key].teacher}
                 title={classItem[key].title}

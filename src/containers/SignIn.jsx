@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Loginpage.css'
+import './SignIn.css'
 //icons
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -8,24 +8,17 @@ import { Link } from 'react-router-dom'
 
 const SignIn = props => {
 	
-	const [active, setActive] = useState('right-panel-active')	
+
 	console.log(props)
 	//swict sing in sing up
-	const handleActive = () =>{
-		setActive('')
-	}
-
-	const handleClose = () => {
-		setActive('')
-		
-	}
+	
 
 	const handleSubmit = e => {
 		e.preventDefault()
 	}
     return (
 			<div className="login__page">
-				<div className={`login__form__container ${active}`} id="login__form__container">
+				<div className="login__form__container" id="login__form__container">
 					
 				<div className="form-container sign-up-container">
 					<form onSubmit={handleSubmit}>
@@ -41,11 +34,12 @@ const SignIn = props => {
 						<input type="password" placeholder="Mot de passe" required/>
 						<button type="submit">S'inscrire</button>
 						<div className="mobileBtn d-md-none d-block">
-							<button className="ghost" id="signUp" onClick={handleActive}>Deja un compte !</button>
+                        <Link to="/login">
+                        	<button className="ghost" id="signUp">Deja un compte !</button>
+                        </Link>						
 						</div>
 					</form>
 				</div>
-
 					<div className="overlay-container d-none d-sm-block">
 						<div className="overlay">
 							<div className="overlay-panel overlay-left">
@@ -54,7 +48,6 @@ const SignIn = props => {
                                 <Link to="/login">
                                     <button className="ghost" id="signIn" >Connection</button>
                                 </Link>
-								
 							</div>
 						</div>
 					</div>

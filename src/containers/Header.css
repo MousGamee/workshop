@@ -27,6 +27,7 @@
 }
 
 .header__presentation button {
+    
     background-color: #ffffff;
     border: none;
     color: #1D90E8;
@@ -34,4 +35,11 @@
     height: 50px;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+@media screen and (max-width : 768px){
+    .header {
+        background : url('/img/image5.png') center center no-repeat;
+        background-size: cover;
+    }
 }

@@ -24,14 +24,21 @@ const Recommendations = ({h2title}) => {
             ))
 
     return (
-       
+       <>
         <div className="recommandation mt-4 mb-4">
-            <div className="container-fluid">
-        <h4 className="mb-3">{h2title}</h4>
+         <div className="container-fluid">
+            <h4 className="mb-3">{h2title}</h4>
         <Swiper
           spaceBetween={10}
-          pagination={{ clickable : true}}
-          slidesPerView={3}
+          breakpoints = {{
+              640 : {
+                  width : 640,
+                  slidesPerView : 1
+              }
+          }}
+         pagination
+         navigation
+          slidesPerView={1}
           scrollbar={{draggable : true}}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
@@ -40,7 +47,7 @@ const Recommendations = ({h2title}) => {
         </Swiper>
             </div>
         </div>
-        
+        </>
     )
 }
 

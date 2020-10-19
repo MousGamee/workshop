@@ -1,0 +1,40 @@
+.bottom__nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: #FFFFFF;
+    overflow-x: auto;
+    z-index: 100;
+    padding: 5px 10%;
+    justify-content: space-around;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    text-decoration: none !important;
+    
+}
+
+.nav__link .nav__label {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    color: #1D90E8 !important;
+}
+
+@media screen and (min-width : 768px){
+    .bottom__nav {
+        display: none;
+    }
+}

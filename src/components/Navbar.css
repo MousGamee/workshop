@@ -1,4 +1,4 @@
-.header__main__navbar{
+.mainNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +11,9 @@
 .header__search__input {
     display: flex;
     align-items: center;
+    flex: 1;
 }
+
 .form-inline > input {
     width: max-content;
     max-width: 536px;
@@ -22,6 +24,8 @@
     border-radius: 30px;
     border: solid 1px lightgray;
     background-color: #fff;
+    outline: none;
+    flex: 1;
 }
 
 .search__icon {
@@ -74,5 +78,26 @@
 .btn__subscribe:hover {
     background-color: #1D90E8;
     color : #FFF;
-    border: 1px solid #1D90E8;;
+    border: 1px solid #1D90E8;
+}
+
+@media screen and (max-width : 768px) {
+    .mainNav {
+        height: 40px;
+        padding-bottom: 10px;
+    }
+
+    .mainNav form {
+        
+    }
+
+    .mainNav input {
+        height: 35px;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+
+    .search__icon {
+        padding-left: 5px;
+    }
 }
