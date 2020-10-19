@@ -5,47 +5,53 @@ const classItems = {
       teacher : 'Boun',
       img: 'image1.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price: "10€"
+      price: "10€",
+      studio : 'Studio Vert'
     },
   
     classItem2: {
-      title: 'Amour de Saumon',
+      title: 'Danse classique',
       teacher : 'Steeve',
       img: 'image2.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price: '15€'
+      price: '15€',
+      studio : 'Lax Studio'
     },
   
     classItem3: {
-      title: 'Hamburger Maison',
+      title: 'Tango de la muerte',
       teacher : 'Marie et Joao',
       img: 'image3.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price :'20€'  
+      price :'20€',
+      studio : 'Studio Pantin'  
     },
   
     classItem4: {
-      title: 'Tartines à l\'Italienne',
+      title: 'Street Jazz',
       teacher : 'Tic et Toc',
       img: 'image4.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price : '5€'
+      price : '5€',
+      studio : 'Studio Mrg'
     },
     
     classItem5: {
-      title: 'Pizza au Chorizo',
+      title: 'Steppin',
       teacher : 'MZ crew',
       img: 'image5.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price : '14€'
+      price : '14€',
+      studio : 'Massaro'
     },
   
     classItem6: {
-      title: 'Moelleux au Chocolat',
+      title: 'Danse like me',
       teacher : 'Mojo',
       img: 'image6.png',
       description: ' ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur facilis earum ex ducimus iste repellat voluptatibus quos ',
-      price : '14€'
+      price : '14€',
+      studio : 'Studio Bleu'
     }
   }
   

@@ -20,6 +20,7 @@ const Recommendations = ({h2title}) => {
                 teacher={classItem[key].teacher}
                 title={classItem[key].title}
                 price={classItem[key].price}
+                studio={classItem[key].studio}
                 /></SwiperSlide>
             ))
 
