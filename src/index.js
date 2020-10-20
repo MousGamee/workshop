@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import SignIn from './containers/SignIn';
+import ClassDetails from './containers/ClassDetails';
 
 const Root = () => (
   <Router>
@@ -16,6 +17,7 @@ const Root = () => (
       <Route  path="/login" component={Login} />
       <Route  path="/signIn" component={SignIn} />
       <Route  path="/searchResult" component={SearchResult} />
+      <Route  path="/details" component={ClassDetails} />
       <Route  component={Page404} />
     </Switch>
   </Router>
