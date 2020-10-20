@@ -44,8 +44,6 @@
     border: solid 1px #1D90E8;;
 }
 
-
-
 @media screen and (max-width : 768px) {
     .btn__reserve{
         width: 100%;

@@ -1,0 +1,40 @@
+.serarch__result__item {
+    font-family: 'Roboto';
+}
+
+.details__text h2, p{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details__text h3 {
+    font-size: 25px;
+    color: #1D90E8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details__text .studio__name {
+    font-size: 25px;
+}
+
+@media screen and (max-width : 468px) {
+    .details__text h2, p{
+        font-size: 15px !important;
+        font-weight: bold;
+  
+    }
+    
+    .details__text h3 {
+        font-size: 12px !important;
+        color: #1D90E8;
+        font-weight: bold;
+  
+    }
+    
+    .details__text .studio__name {
+        font-size: 12px !important;
+    }
+    
+}
